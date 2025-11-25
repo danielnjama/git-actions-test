@@ -14,4 +14,7 @@ jobs:
           run: touch notes.txt
         - name: Add content to notes.txt
           run: echo 'some notes' > notes.txt
-        
+        - name: View content
+          run: cat notes.txt
+        - name: View files
+          run: ls -lrt
