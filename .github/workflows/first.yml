@@ -19,4 +19,4 @@ jobs:
         - name: View files
           run: ls -lrt
         - name: View content for readme.md
-          run: cat README.md
+          run: cat $HOME/README.md
