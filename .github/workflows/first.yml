@@ -1,0 +1,17 @@
+name: First action
+
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome user
+          run: echo 'Something Great!!!!'
+        - name: List files
+          run: ls -lrt
+        - name: Create a new file
+          run: touch notes.txt
+        - name: Add content to notes.txt
+          run: echo 'some notes' > notes.txt
+        
