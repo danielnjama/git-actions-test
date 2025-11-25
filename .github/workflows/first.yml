@@ -6,6 +6,8 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+        - name:
+          uses: actions/checkout@v4
         - name: Welcome user
           run: echo 'Something Great!!!!'
         - name: List files
@@ -19,4 +21,4 @@ jobs:
         - name: View files
           run: ls -lrt
         - name: View content for readme.md
-          run: cat $HOME/README.md
+          run: cat README.md
