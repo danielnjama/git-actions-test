@@ -10,15 +10,23 @@ jobs:
           uses: actions/checkout@v4
         - name: Welcome user
           run: echo 'Something Great!!!!'
-        - name: List files
-          run: ls -lrt
-        - name: Create a new file
-          run: touch notes.txt
-        - name: Add content to notes.txt
-          run: echo 'some notes' > notes.txt
-        - name: View content
-          run: cat notes.txt
-        - name: View files
-          run: ls -lrt
-        - name: View content for readme.md
-          run: cat README.md
+        - name: Do a number of things
+          run: |
+              ls -lrt
+              touch notes.txt
+              echo 'some notes' > notes.txt
+              ls -lrt
+              cat README.md
+
+        # - name: List files
+        #   run: ls -lrt
+        # - name: Create a new file
+        #   run: touch notes.txt
+        # - name: Add content to notes.txt
+        #   run: echo 'some notes' > notes.txt
+        # - name: View content
+        #   run: cat notes.txt
+        # - name: View files
+        #   run: ls -lrt
+        # - name: View content for readme.md
+        #   run: cat README.md
